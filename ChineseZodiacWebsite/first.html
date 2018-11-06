@@ -1,0 +1,97 @@
+<!--The Chinese Zodiac is based on a twelve-year cycle, each year in that cycle related to an animal sign. 
+These signs are the rat, ox, tiger, rabbit, dragon, snake, horse, sheep, monkey, rooster, dog and pig.
+This website "Chinese Zodiac" contains 3 pages. "first.html" introduces different traits of each animal; 
+"index.php" allows users to input their birth year to query their own zodiac; and "story.html" simply tells the 
+story of Chinese Zotiac.-->
+
+<html>
+	
+	<link rel = "stylesheet" href = "style.css"/>
+	<head>
+		<script type="text/javascript" src="main.js"></script>
+		<meta charset="utf-8">
+		<title>ChineseZodiac</title>
+		
+<!--Create labels and links between pages.-->
+			
+		<ul>
+ 			<li><a class="active" href="first.html">Introduction to Chinese Zodiac</a></li>
+  			<li><a href="index.php">Check Your Zodiac Sign</a></li>
+  			<li><a href="story.html">Story of 12 Chinese Zodiac</a></li>
+		</ul>
+		
+	</head>
+
+	<body onLoad="greet()">
+		
+<!--This part functions as when users put the mouse on the piture of each animal, it will show the introduction of the animal.-->
+				
+		<body bgcolor= #f1f1f1>
+		
+		<img src="ChineseZodiac.jpg" usemap="#indexmap" alt="zodiac" width:80%/>
+		
+		</p>
+		
+		<map name="indexmap" id="indexmap1">
+		
+		<area shape="rect" coords="104,167, 204,378"
+		onMouseOver="writeText('Rat: <br>intellectual <br>industrious <br>eloquent')"
+		href ="first.html" target ="_blank" alt="Rat" />
+
+		<area shape="rect" coords="206,167,441,377"
+		onMouseOver="writeText('Ox:<br>patient <br>hardworking <br>steady')"
+		href ="first.html" target ="_blank" alt="Ox" />
+
+		<area shape="rect" coords="443,167,673,371"
+		onMouseOver="writeText('Tiger:<br>passionate <br>unpredictable <br>affectionate')"
+		href ="first.html" target ="_blank" alt="Tiger" />
+		
+		<area shape="rect" coords="678,167,811,382"
+		onMouseOver="writeText('Rabbit:<br>reserved <br>thorough <br>compassionate')"
+		href ="first.html" target ="_blank" alt="Rabbit" />
+		
+		<area shape="rect" coords="107,397,279,624"
+		onMouseOver="writeText('Dragon:<br>strong <br>impetuous <br>proud')"
+		href ="first.html" target ="_blank" alt="Dragon" />
+		
+		<area shape="rect" coords="287,404,467,624"
+		onMouseOver="writeText('Snake:<br>graceful <br>purposeful <br>prudent')"
+		href ="first.html" target ="_blank" alt="Snake" />
+		
+		<area shape="rect" coords="471,408,693,620"
+		onMouseOver="writeText('Horse:<br>magnetic <br>perceptive <br>talkative')"
+		href ="first.html" target ="_blank" alt="Horse" />
+		
+		<area shape="rect" coords="697,408,870,610"
+		onMouseOver="writeText('Goat:<br>cautious <br>understanding <br>generous')"
+		href ="first.html" target ="_blank" alt="Goat" />
+		
+		<area shape="rect" coords="110,648,328,835"
+		onMouseOver="writeText('Monkey:<br>improviser <br>inquisitive <br>suspicious ')"
+		href ="first.html" target ="_blank" alt="Monkey" />
+		
+		<area shape="rect" coords="331,648,529,837"
+		onMouseOver="writeText('Rooster:<br>decisive <br>responsible <br>organized')"
+		href ="first.html" target ="_blank" alt="Rooster" />
+		
+		<area shape="rect" coords="532,651,692,825"
+		onMouseOver="writeText('Dog:<br>honest <br>loyal <br>idealistic')"
+		href ="first.html" target ="_blank" alt="Dog" />
+		
+		<area shape="rect" coords="697,649,885,831"
+		onMouseOver="writeText('Pig:<br>intelligent <br>trusting <br>sociable')"
+		href ="first.html" target ="_blank" alt="Pig" />
+
+		</map>
+
+<!--The following text is connected with a javascript function "writeText", to display different traits of animals in one text.-->
+		
+		<span class = "hello">
+		<strong><p id="desc"></p></strong>
+		</span>
+		
+	</body>
+		
+</html>
+
+

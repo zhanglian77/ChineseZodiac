@@ -1,0 +1,72 @@
+body {margin:0;}
+
+h1{
+	margin-top:100px;
+	 font-size:30pt;
+  
+}
+
+ul {
+	list-style-type: none;
+   	margin: 0;
+    	padding: 0;
+    	overflow: hidden;
+    	background-color: #333;
+    	position: fixed;
+    	top: 0;
+    	width: 100%;
+	}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    			background-color: #111;
+			}
+
+.active {
+    	background-color: #4CAF50;
+			}
+					
+.hello {
+	font-style:italic;
+	border:7px solid #4CAF50;
+	font-size:40pt;
+	width:30%;
+	position:fixed;
+	_position:absolute;
+	top:50px;
+	right:10px;
+	text-align:center 
+	
+	
+   	}
+
+::-webkit-datetime-edit-fields-wrapper { font-size: 20px; width: 500px; }  
+
+#story{
+background-color: #4CAF50;
+opacity:0.9;
+font-style:italic;
+}
+
+.lines{
+font-size:20pt;
+}
+
+#myquery{
+	font-size:40pt;
+	background-image:url(textbackground.jpg);
+	font-style:italic;
+}
+
+
